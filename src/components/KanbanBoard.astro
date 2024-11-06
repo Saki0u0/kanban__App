@@ -118,7 +118,7 @@ import "@fontsource/henny-penny";
         group: "shared",
         animation: 150,
         emptyInsertThreshold: 20,
-        onEnd: (event) => {
+        onEnd: (event:any) => {
           const taskId = event.item.getAttribute("data-task-id");
           const fromColumnLabel =
             event.from.getAttribute("data-column-label") ?? "";
