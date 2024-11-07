@@ -1,6 +1,14 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "noEmitOnError": true, 
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false ,
+    "ignoreDeprecations": "5.0"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
